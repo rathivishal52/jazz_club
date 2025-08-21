@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Note - Experience Jazz Like Never Before</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1753987065/pplx_project_search_images/26c82bfcea98168d16f0ffa38d994e7c5708f2eb.jpg" alt="The Velvet Note Logo" class="nav-logo">
+                <span class="nav-title">The Velvet Note</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn--primary nav-cta" onclick="openReservationModal()">Reservations</button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-background">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1753987065/pplx_project_search_images/a93d3efb511937e3e1bc3246159c47723.jpg" alt="Jazz Club Interior" class="hero-bg-image">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Experience Jazz Like Never Before</h1>
+                <p class="hero-subtitle">Intimate performances, craft cocktails, and unforgettable nights at The Velvet Note</p>
+                <button class="btn btn--primary btn--lg hero-cta" onclick="openReservationModal()">Reserve Your Table Tonight</button>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎵</span>
+                        <span>Live Jazz Every Night</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🍸</span>
+                        <span>Craft Cocktails</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">👥</span>
+                        <span>Intimate Setting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Where Jazz Comes Alive</h2>
+                    <p class="about-description">Step into The Velvet Note, where timeless jazz meets modern sophistication. Our intimate venue features world-class musicians, handcrafted cocktails, and an atmosphere that captures the essence of jazz's golden age.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>Live Jazz Every Night</h3>
+                            <p>Experience world-class musicians performing intimate sets</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Craft Cocktails</h3>
+                            <p>Handcrafted drinks inspired by jazz legends</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Intimate Setting</h3>
+                            <p>Only 80 seats for an up-close, personal experience</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Premium Sound</h3>
+                            <p>State-of-the-art acoustics for perfect listening</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1753987066/pplx_project_search_images/64d0ad8f64d9a2004cf0372224723acbae84d1f1.jpg" alt="Jazz Club Interior" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title text-center">Upcoming Performances</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-month">Aug</span>
+                        <span class="date-day">15</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Sarah Mitchell Trio</h3>
+                        <p class="event-description">Smooth jazz vocals with contemporary arrangements</p>
+                        <div class="event-details">
+                            <span class="event-time">8:00 PM</span>
+                            <span class="event-price">$35</span>
+                        </div>
+                        <button class="btn btn--outline btn--sm">Book Tickets</button>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-month">Aug</span>
+                        <span class="date-day">22</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Marcus Johnson Quartet</h3>
+                        <p class="event-description">Classic jazz standards with saxophone mastery</p>
+                        <div class="event-details">
+                            <span class="event-time">8:30 PM</span>
+                            <span class="event-price">$40</span>
+                        </div>
+                        <button class="btn btn--outline btn--sm">Book Tickets</button>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-month">Aug</span>
+                        <span class="date-day">29</span>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">The Blue Note Sessions</h3>
+                        <p class="event-description">An evening of bebop and modern jazz fusion</p>
+                        <div class="event-details">
+                            <span class="event-time">9:00 PM</span>
+                            <span class="event-price">$45</span>
+                        </div>
+                        <button class="btn btn--outline btn--sm">Book Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Guests Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The Velvet Note offers an unparalleled jazz experience. The intimate setting and incredible musicians make every visit unforgettable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ER</div>
+                        <span class="author-name">Emma Rodriguez</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best jazz club in the city! The cocktails are as smooth as the music, and the atmosphere is absolutely perfect for a night out."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DC</div>
+                        <span class="author-name">David Chen</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I've been coming here for years. The Velvet Note consistently delivers world-class jazz performances in the most elegant setting."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LT</div>
+                        <span class="author-name">Lisa Thompson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Visit Us Tonight</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Jazz Avenue<br>Downtown, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-JAZZ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservations@thevelvetnote.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hours">
+                        <h4>Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Tuesday</span>
+                                <span>Closed</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Wednesday - Thursday</span>
+                                <span>7:00 PM - 1:00 AM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Friday - Saturday</span>
+                                <span>6:00 PM - 2:00 AM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>7:00 PM - 12:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--lg" onclick="openReservationModal()">Make a Reservation</button>
+                </div>
+                
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h4>📍 Find Us Downtown</h4>
+                        <p>Located in the heart of the jazz district</p>
+                        <div class="social-links">
+                            <a href="https://facebook.com/thevelvetnote" target="_blank" class="social-link">Facebook</a>
+                            <a href="https://instagram.com/thevelvetnote" target="_blank" class="social-link">Instagram</a>
+                            <a href="https://twitter.com/thevelvetnote" target="_blank" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay in the Loop</h3>
+                <p>Get notified about upcoming shows and special events</p>
+                <form class="newsletter-form" onsubmit="submitNewsletter(event)">
+                    <input type="email" class="form-control newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div class="modal hidden" id="reservation-modal">
+        <div class="modal-overlay" onclick="closeReservationModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reserve Your Table</h3>
+                <button class="modal-close" onclick="closeReservationModal()">&times;</button>
+            </div>
+            <form class="reservation-form" onsubmit="submitReservation(event)">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Time</label>
+                        <select class="form-control" required>
+                            <option value="">Select time</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                            <option value="10:00 PM">10:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Party Size</label>
+                    <select class="form-control" required>
+                        <option value="">Select party size</option>
+                        <option value="2">2 guests</option>
+                        <option value="3">3 guests</option>
+                        <option value="4">4 guests</option>
+                        <option value="5">5 guests</option>
+                        <option value="6">6 guests</option>
+                        <option value="8">8+ guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Special Requests (Optional)</label>
+                    <textarea class="form-control" rows="3" placeholder="Birthday celebration, anniversary, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Complete Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
